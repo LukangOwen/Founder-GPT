@@ -10,18 +10,31 @@ Please read the paper `"Founder_GPT_Lukang Guo.pdf"` for the details of the meth
 ### Phase 1: Data Preparation – Founder Feature Engineering
 Due to the limited size of files allowed in github, the extracted founder data and their embeddings have to be conducted manually first before the main execution of the algorithm.
 
-Firstly, prepare your raw data in the folder `founder-data`, ensuring the following files exist:
+1. Firstly, prepare your raw data in the folder `founder-data`, ensuring the following files exist:
+
 `successProfilePath = 'founder-data/success_enriched_linkedin_profiles.csv'`
 `sucessCompanyPath = 'founder-data/Moneyball 1.1_ Success.xlsx'`
+
 `failProfilePath = 'founder-data/fail_enriched_linkedin_profiles.csv'`
 `failCompanyPath = 'founder-data/Moneyball 1.1_ Fail.xlsx'`
+
 Note that you will need to manually download the files for enriched_linkedin_profiles into the folder which are larger than github's limit.
 
-Then, run all the cell blocks in the file `Founder Feature Engineering.ipynb` to create founder data.
+2. Then, run all the cell blocks in the file `Founder Feature Engineering.ipynb` to create founder data.
 The programme will first read all the founder's profiles in the dataset into individual json files stored in the following directories:
+
 `successDataDirectory = 'founder-data/successful-founders'`
+
 `failDataDirectory = 'founder-data/failed-founders'`
+
 Then, the programme would read from the json files and export all processed founder data into the file `'Founder Features.csv'`. This file should be the key file that subsequent main execution of the programme should read from.
+
+3. If you wish to use pre-determined embeddings for founder-details, you can open the file `"Similarity Comparison.ipynb"` and run the code up to the section where you split the embedding data into two files:
+
+`output_file1 = 'Founder Features with Embeddings_Training.csv'`
+`output_file2 = 'Founder Features with Embeddings_Testing.csv'`
+
+This is, however, a lengthy process. Alternatively, you can ask the author to provide you with the files for the embeddings of founder details directly.
 
 
 ### Phase 2: Main Execution
