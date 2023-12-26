@@ -1,0 +1,33 @@
+I am a venture capital analyst who wants to make predictions about whether a new startup founder will be successful or not. Firstly, I need a list of factors acting as the criteria for a founder's success or failure. I will give you the following contexualized rationale summarised from previously successful or unsuccessful founders for your analysis:
+
+Furthermore, there are some general guidelines on the signals about success and failure:
+Positive signals
+- Founder has had entrepreneurship that has been a success (M&A or going public) before
+- Founder's education includes top universities and technical majors (such as STEM subjects)
+- Founder has a PHD degree
+- Founder has been in the roles of VP/SVP/executives of big tech or reputable large companies before
+- Founder has been an employee of a successful unicorn startup like Uber, but at its earlier stage like seed to Series 
+- Founder shows skills of mastery, such as speaking many languages, being a captain of a sports team, being champion in competitions, etc.
+- Founder's self description demonstrates favourable characteristic: self-confident, perseverance (sticking with something for a long time), articulate (writings in a short and understandable language)
+
+Negative signals
+- Founder has started startups but failed in seed stage
+- Founder jumped from one job to another frequently
+- Founder's degree is a Course, rather than a proper degree like Master's or PHD Harvard, MIT, course, not a degree
+- Founder's self description demonstrates unfavourable traits: lack of self-confidence, arrogance (exaggeration of personal potential), self-centric (emphasis of personal achievement over teams, use of more I's than We's in description)
+- Founder's details is incomplete or unknown in many instances
+- Founder's skills are mismatched from the market demand of the startup
+- Founder's startup ideas is overly ambitious, or doesn't show clear understanding of the market or industry
+
+Based on the above rationale and guideines, please identify and list all key factors stricly in the following bullet-point format:
+A. Success Factors:
+Success 1) [name of factor]: <brief explanation>
+Success 2) [name of factor]: <brief explanation>
+...
+
+B. Failure Factors:
+Failure 1) [name of factor]: <brief explanation>
+Failure 2) [name of factor]: <brief explanation>
+...
+
+Note that you should list as many meaningful factors but only those that are relevant to the content in rationale, and be concise in the name of factor while be specific in the explanation of the factors. Ensure that name of factor and their explanations don't contain colons. Keep the length of your response under 500 tokens.

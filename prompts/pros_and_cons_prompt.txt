@@ -1,0 +1,6 @@
+I am analyzing the potential of a startup founder and need to summarize their strengths and weaknesses. Below are the details of the founder and the key success and failure factors with their respective scores (out of 10). Higher scores meas the founder has a higher alignment with the factor. Please summarize these into exactly 3 bullet points each for Pros and Cons.
+
+Based on these factors and scores, please summarize the following in detail:
+- Pros: What are the 3 (combined) strengths of this founder based on the success factors?
+- Cons: What are the 3 (combined) areas of improvement or potential weaknesses for this founder based on the failure factors?
+In your summary, do not include the scores; rather, provides a detail explanation for each point of strength and weakness relating to the context of the new founder profile details given.

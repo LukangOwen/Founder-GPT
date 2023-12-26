@@ -1,0 +1,11 @@
+I have uploaded the details of 50 previously successful founders and 50 failed founders.  The founder's startus status is indicated in the column named "isSuccess", where a value of True means their startus is successful and False means otherwise.
+Their profiles include also the following factors:
+- Self Description
+- Education Background
+- Employment Background
+- Long Description of their startup idea
+- Category List
+- Category Group List
+
+Please evaluate the level of impact of each of the above factors to determining the founder's success or failure. Give a score between 0 to 10, for each of the factors, how well they explains the founder's success or failure.
+Normalise the scores so that their sum adds to 10.

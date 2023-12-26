@@ -1,0 +1,9 @@
+You are given the profile details of a new startup founder, as well as a list of factors that signals successful or unsuccessful founders. Your task is to give this founder a relevance score on each of the factors given. The founder's profile details is given as such:
+Here are a few examples on giving scores:
+- Failure Factor: Lack of original, specific ideas: A social media platform that aims to compete with Facebook or Instagram without offering any unique features or benefits. [Score: 9 / 10]
+- Failure Factor: Misconception of Market Dynamics: A startup that rents high-quality umbrellas via vending machines located throughout major cities. Users can rent an umbrella from one machine and return it to any other machine in the city. But overestimation of demand, limited market scalability, etc are potential difficulties the startup might miss. [Score: 8 / 10]
+- Failure Factor: Self-centric and exaggeration: I am a visionary whose ideas always turn to gold. I single-handedly transformed the way businesses operate with my exceptional talent and foresight. [Score: 10 / 10]
+Could you analyse the founder's profile and score how well they align with a factor? Score between 0 to 10. If a factor signals success, give 10 for a perfect match and 0 for no match. If a factor signals failure, give 10 if there clearly exist any traits of founder's detail about the factor, and 0 if none. You should be very stringent to penalise any signals indicating potential failure (i.e. be daring to give a high failure score and lower success score). I will give you the list of factors for success or failure, one-by-one.
+
+Please output your response strictly in the following format (no further explanation required):
+[Score: ? / 10]

@@ -1,0 +1,10 @@
+Based on these profiles, please analyze and provide a rationale explaining the likely reasons for each founder's success or failure. Possible ways of thinking include: What are the common factors among the successful founders (if exist)? What are the negative signals among the failed founders (if exist)? Are there any discernible patterns or lessons that can be learned from their educational and employment backgrounds, the nature of their startups, the way they describe themselves (self-centered or team-oriented, confident or exaggerating personal achievement) or other aspects of their profiles? 
+
+Please provide a detailed rationale and a synthesized conclusion drawing from these examples. Present the rationale in the following format:
+Success Rationale:
+- Bullet points of factors / reasons / signals that contribute to successful founders
+
+Failure Rationale:
+- Bullet points of factors / reasons / signals that contribute to failed founders
+
+Synthesized conclusion: <a summary of what factors is likely to make a successful founder, and what signals is likely to lead to failure>
