@@ -8,7 +8,7 @@ Please read the paper `"Founder_GPT_Lukang Guo.pdf"` for the details of the meth
 ## Execution of Programme
 
 ### Phase 1: Data Preparation – Founder Feature Engineering
-Due to the limited size of files allowed in github, the extracted founder data and their embeddings have to be conducted manually first before the main execution of the algorithm.
+Due to the limited size of files allowed in github, the extracted founder data and their embeddings are not provided here in the repository, and have to be conducted manually first before the main execution of the algorithm. Alternatively, contact the author to provide you with the prepared data directly.
 
 1. Firstly, prepare your raw data in the folder `founder-data`, ensuring the following files exist:
 
@@ -47,10 +47,12 @@ This is, however, a lengthy process. Alternatively, you can ask the author to pr
   
 3. Then, execute one-by-one, the blocks in each of the 'Main Programme Execution' section. Some blocks may take longer to respond, as the computational time is high in some parts (particularly, the extraction of top similar founder profiles, and querying GPT-4).
 
-The most important functions that you will interact with include:
-- `calculate_aggregate_similarity()`: Find the top 5 matching results of input founder from training set based on training data
+The most important functions (to-be APIs) that you will interact with include:
+- `extract_top_n_founders()`, `calculate_aggregate_similarity()`: Find the top 5 matching results of input founder from training set based on training data
 - `generate_prompt_for_rationale(founder_profiles)`: Generate prompt to produce a rationale from GPT-4
 - `get_rationale(prompt)`: Obtain rationale from the prompt
-- 
+- `request_key_factors()`, `extract_key_factors()`: obtain a list of successful and failure factors
+- `score_founder_profile()`: The function used for scoring a founder
+- `generate_pros_and_cons()`: The function used to generate a list of 3 pros and 3 cons
 
 Feel free to alter the code to accept input in your own favourable ways. Also, feel free to update any methods more efficient – such as, replacing the aggregate similarity comparison in section 3.2 with Pinecone vector database.
