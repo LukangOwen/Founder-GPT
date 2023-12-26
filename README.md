@@ -13,9 +13,11 @@ Due to the limited size of files allowed in github, the extracted founder data a
 1. Firstly, prepare your raw data in the folder `founder-data`, ensuring the following files exist:
 
 `successProfilePath = 'founder-data/success_enriched_linkedin_profiles.csv'`
+
 `sucessCompanyPath = 'founder-data/Moneyball 1.1_ Success.xlsx'`
 
 `failProfilePath = 'founder-data/fail_enriched_linkedin_profiles.csv'`
+
 `failCompanyPath = 'founder-data/Moneyball 1.1_ Fail.xlsx'`
 
 Note that you will need to manually download the files for enriched_linkedin_profiles into the folder which are larger than github's limit.
@@ -24,6 +26,7 @@ Note that you will need to manually download the files for enriched_linkedin_pro
 The programme will first read all the founder's profiles in the dataset into individual json files stored in the following directories:
 
 `successDataDirectory = 'founder-data/successful-founders'`
+
 `failDataDirectory = 'founder-data/failed-founders'`
 
 Then, the programme would read from the json files and export all processed founder data into the file `'Founder Features.csv'`. This file should be the key file that subsequent main execution of the programme should read from.
@@ -31,6 +34,7 @@ Then, the programme would read from the json files and export all processed foun
 3. If you wish to use pre-determined embeddings for founder-details, you can open the file `"Similarity Comparison.ipynb"` and run the code up to the section where you split the embedding data into two files:
 
 `output_file1 = 'Founder Features with Embeddings_Training.csv'`
+
 `output_file2 = 'Founder Features with Embeddings_Testing.csv'`
 
 This is, however, a lengthy process. Alternatively, you can ask the author to provide you with the files for the embeddings of founder details directly.
@@ -42,5 +46,11 @@ This is, however, a lengthy process. Alternatively, you can ask the author to pr
 2. You can prepare your input by modifying the `"Input Founder Features.csv" file`. Alternatively, write your own input API to seek input from new founder. ps: Currently, all input are assumed to be taken from the testing set of our data (see the file 'Founder Features with Embeddings_Testing.csv').
   
 3. Then, execute one-by-one, the blocks in each of the 'Main Programme Execution' section. Some blocks may take longer to respond, as the computational time is high in some parts (particularly, the extraction of top similar founder profiles, and querying GPT-4).
+
+The most important functions that you will interact with include:
+- `calculate_aggregate_similarity()`: Find the top 5 matching results of input founder from training set based on training data
+- `generate_prompt_for_rationale(founder_profiles)`: Generate prompt to produce a rationale from GPT-4
+- `get_rationale(prompt)`: Obtain rationale from the prompt
+- 
 
 Feel free to alter the code to accept input in your own favourable ways. Also, feel free to update any methods more efficient – such as, replacing the aggregate similarity comparison in section 3.2 with Pinecone vector database.
